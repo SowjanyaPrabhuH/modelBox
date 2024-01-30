@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model_box</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+   <div class="popup" id="popUp">
+    <img src="casual-life-3d-check-mark-pink (1).png" alt="png">
+    <h2>ThankYou</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tempora aliquid id reprehenderit quod accusantium minus quibusdam, sequi libero architecto.</p>
+   <button type="button" onclick="closePopup()">OK</button>
+</div>
+    </div>
+
+    <script>
+        let popup=document.getElementById("popUp");
+        
+
+        function openPopup(){
+            popup.classList.add("openPopup");
+        }
+
+        function closePopup(){
+            popup.classList.remove ("openPopup");
+        }
+
+        
+
+
+    </script>
+</body>
+</html>
